@@ -27,6 +27,7 @@
     {
         <thead>
             <tr>
+                <th hidden></th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone No.</th>
@@ -41,30 +42,31 @@
         <tbody>
             @foreach (var item in Model)
             {
-                <tr>
-                    <td>@item.FirstName  @item.LastName</td>
-                    <td>@item.Email</td>
-                    <td>@item.PhoneNumber</td>
-                    <td>@item.AddressLine1 @item.AddressLine2</td>
-                    <td>@item.PostalCode</td>
-                    <td>@item.City</td>
-                    <td>@item.State</td>
-                    <td>@item.Country</td>
+            <tr>
+                <td hidden>@item.Id</td>
+                <td>@item.FirstName  @item.LastName</td>
+                <td>@item.Email</td>
+                <td>@item.PhoneNumber</td>
+                <td>@item.AddressLine1 @item.AddressLine2</td>
+                <td>@item.PostalCode</td>
+                <td>@item.City</td>
+                <td>@item.State</td>
+                <td>@item.Country</td>
 
-                    <td>
+                <td>
 
-                        <a asp-action="EditContact" asp-route-id="@item.Id"
-                           class="btn btn-info" style="margin-bottom:5px;">
-                            <i class="glyphicon glyphicon-pencil"></i>  Edit
-                        </a>
+                    <a asp-action="EditContact" asp-route-id="@item.Id"
+                       class="btn btn-info" style="margin-bottom:5px;">
+                        <i class="glyphicon glyphicon-pencil"></i>  Edit
+                    </a>
 
-                        <a asp-action="MapAddressData" asp-route-id="@item.Id"
-                           class="btn btn-info">
-                            <i class="glyphicon glyphicon-map-marker"></i>  View On Map
-                        </a>
+                    <a asp-action="MapAddressData" asp-route-id="@item.Id"
+                       class="btn btn-info">
+                        <i class="glyphicon glyphicon-map-marker"></i>  View On Map
+                    </a>
 
-                    </td>
-                </tr>
+                </td>
+            </tr>
             }
         </tbody>
     }
@@ -73,8 +75,9 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-        
+
         $("#contactListTBL").dataTable({
+            order: [[0,'desc']],
 
         });
     });
