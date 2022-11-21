@@ -5,14 +5,17 @@
 
 @model IEnumerable<DotNetAssessmentKnila.Repository.StoredProcs.GetAllContactsDataResult>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" />
+<script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
 
 <h2>All Contacts</h2>
 
 <a asp-action="CreateContact" class="btn btn-sm btn-primary">Create New Contact</a>
-@*<a asp-action="GetReservation" class="btn btn-sm btn-secondary">Get Reservation</a>*@
 
-<table id="contactListTBL" class="table table-sm table-bordered table-condensed">
+
+<table id="contactListTBL" class="table table-sm table-bordered table-condensed ">
     @if (Model.Count() == 0)
     {
         <tr>
@@ -32,6 +35,7 @@
                 <th>City</th>
                 <th>State</th>
                 <th>Country</th>
+                <th>Operations</th>
             </tr>
         </thead>
         <tbody>
@@ -66,22 +70,12 @@
     }
 </table>
 
-<script>
+<script type="text/javascript">
 
     $(document).ready(function () {
+        
         $("#contactListTBL").dataTable({
-            aaSorting: [[2, 'asc']],
-            bPaginate: false,
-            bFilter: false,
-            bInfo: false,
-            bSortable: true,
-            bRetrieve: true,
-            aoColumnDefs: [
-                { "aTargets": [0], "bSortable": true },
-                { "aTargets": [1], "bSortable": true },
-                { "aTargets": [2], "bSortable": true },
-                { "aTargets": [3], "bSortable": true }
-            ]
+
         });
     });
 
