@@ -1,0 +1,243 @@
+﻿@model DotNetAssessmentKnila.Models.ContactDataVM
+
+@{
+    ViewData["Title"] = "CreateContact";
+}
+
+<h1>CreateContact</h1>
+
+<h4>Contact</h4>
+<hr />
+<div class="row">
+    <div class="col-lg-12 col-md-12">
+        <form asp-action="CreateContact">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @*<div class="form-group">
+            <label asp-for="Id" class="control-label"></label>
+            <input asp-for="Id" class="form-control" />
+            <span asp-validation-for="Id" class="text-danger"></span>
+        </div>*@
+
+            <div class="col-lg-6 col-md-6" style="float:left">
+                <div class="form-group">
+                    <label asp-for="FirstName" class="control-label"></label>
+                    <input asp-for="FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6" style="float:right">
+                <div class="form-group">
+                    <label asp-for="LastName" class="control-label"></label>
+                    <input asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6" style="float:left">
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6" style="float:right">
+                <div class="form-group">
+                    <label asp-for="PhoneNumber" class="control-label"></label>
+                    <input asp-for="PhoneNumber" class="form-control" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6" style="float:left">
+                <div class="form-group">
+                    <label asp-for="AddressLine1" class="control-label"></label>
+                    <input asp-for="AddressLine1" class="form-control" />
+                    <span asp-validation-for="AddressLine1" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6" style="float:right">
+                <div class="form-group">
+                    <label asp-for="AddressLine2" class="control-label"></label>
+                    <input asp-for="AddressLine2" class="form-control" />
+                    <span asp-validation-for="AddressLine2" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6" style="float:left">
+                <div class="form-group">
+                    <label asp-for="Landmark" class="control-label"></label>
+                    <input asp-for="Landmark" class="form-control" />
+                    <span asp-validation-for="Landmark" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6" style="float:right">
+                <div class="form-group">
+                    <label asp-for="PostalCode" class="control-label"></label>
+                    <input asp-for="PostalCode" class="form-control" />
+                    <span asp-validation-for="PostalCode" class="text-danger"></span>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-6 col-md-6" style="float:left">
+                <div class="form-group">
+                    <label text="Country" class="control-label">Country</label>
+                    <select id="ddlCountries" name="CountryId" asp-for="CountryId" asp-items="Model.Countries">
+                        <option value="">Please select</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6" style="float:right">
+                <div class="form-group">
+                    <label text="State" class="control-label">State</label>
+
+                    <select class="dropdown-toggle" data-toggle="dropdown" id="ddlStates" name="StateId" asp-for="StateId" asp-items="Model.States">
+                        <option value="">Please select</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6" style="float:left">
+                <div class="form-group">
+                    <label text="City" class="control-label">City</label>
+                    <select class="dropdown-toggle" data-toggle="dropdown" id="ddlCities" name="CityId" asp-for="CityId" asp-items="Model.Cities">
+                        <option value="">Please select</option>
+                    </select>
+
+                    <span asp-validation-for="CityId" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <input id="CreateContact" type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("select").each(function () {
+            if ($(this).find("option").length <= 1) {
+                $(this).attr("disabled", "disabled");
+            }
+        });
+
+        $("select").change(function () {
+            var value = 0;
+            if ($(this).val() != "") {
+                value = $(this).val();
+            }
+            var id = $(this).attr("id");
+            $.ajax({
+                type: "POST",
+                url: "/Home/GetLookUpData",
+                data: { value: value, type: id },
+                success: function (response) {
+                    switch (id) {
+                        case "ddlCountries":
+                            DisableDropDown("#ddlStates");
+                            DisableDropDown("#ddlCities");
+                            PopulateDropDown("#ddlStates", response.states);
+                            break;
+                        case "ddlStates":
+                            DisableDropDown("#ddlCities");
+                            PopulateDropDown("#ddlCities", response.cities);
+                            break;
+                    }
+                },
+                failure: function (response) {
+                    alert(response.responseText);
+                },
+                error: function (response) {
+                    alert(response.responseText);
+                }
+            });
+        });
+
+        if ($("#ddlCountries").val() != "" && $("#ddlStates").val() != "" && $("#ddlCities").val() != "") {
+            var message = "Country: " + $("#ddlCountries option:selected").text();
+            message += "\nState: " + $("#ddlStates option:selected").text();
+            message += "\nCity: " + $("#ddlCities option:selected").text();
+            alert(message);
+        }
+    });
+
+    function DisableDropDown(dropDownId) {
+        $(dropDownId).attr("disabled", "disabled");
+        $(dropDownId).empty().append('<option selected="selected" value="0">Please select</option>');
+    }
+
+    function PopulateDropDown(dropDownId, list) {
+
+        if (list != null && list.length > 0) {
+            $(dropDownId).removeAttr("disabled");
+            $.each(list, function () {
+                $(dropDownId).append($("<option></option>").val(this['value']).html(this['text']));
+            });
+        }
+    }
+
+    //$("#CreateContact").click(function () {
+    //    debugger;
+
+    //    var data = {
+    //        FirstName: $('#FirstName').val(),
+    //        LastName: $('#LastName').val(),
+    //        Email: $('#Email').val(),
+    //        PhoneNumber: $('#PhoneNumber').val(),
+    //        AddressLine1: $('#AddressLine1').val(),
+    //        AddressLine2: $('#AddressLine2').val(),
+    //        Landmark: $('#Landmark').val(),
+    //        CityId: $('#CityId').val(),
+    //        StateId: $('#StateId').val(),
+    //        CountryId: $('#CountryId').val(),
+    //        PostalCode: $('#PostalCode').val()
+    //    }
+
+
+    //    console.log(data);
+
+    //    $.ajax({
+    //        type: "POST",
+    //        url: "/Home/CreateContact",
+    //        data: data,
+    //        success: function (result) {
+    //            if (result == true) {
+    //                alert("Contact Created Successfully");
+
+    //            } else {
+    //                alert("Something went wrong");
+
+    //            }
+    //        },
+    //        failure: function (response) {
+    //            alert(response.responseText);
+    //        },
+    //        error: function (response) {
+    //            alert(response.responseText);
+    //        }
+    //    });
+    //});
+</script>

@@ -1,0 +1,12 @@
+D:\KnilaTask\DotNet_Developer_Assessment\DotNetAssessmentKnila\DotNetAssessmentKnila.Data\bin\Debug\netcoreapp3.1\DotNetAssessmentKnila.Data.deps.json
+D:\KnilaTask\DotNet_Developer_Assessment\DotNetAssessmentKnila\DotNetAssessmentKnila.Data\bin\Debug\netcoreapp3.1\DotNetAssessmentKnila.Data.runtimeconfig.json
+D:\KnilaTask\DotNet_Developer_Assessment\DotNetAssessmentKnila\DotNetAssessmentKnila.Data\bin\Debug\netcoreapp3.1\DotNetAssessmentKnila.Data.runtimeconfig.dev.json
+D:\KnilaTask\DotNet_Developer_Assessment\DotNetAssessmentKnila\DotNetAssessmentKnila.Data\bin\Debug\netcoreapp3.1\DotNetAssessmentKnila.Data.dll
+D:\KnilaTask\DotNet_Developer_Assessment\DotNetAssessmentKnila\DotNetAssessmentKnila.Data\bin\Debug\netcoreapp3.1\DotNetAssessmentKnila.Data.pdb
+D:\KnilaTask\DotNet_Developer_Assessment\DotNetAssessmentKnila\DotNetAssessmentKnila.Data\obj\Debug\netcoreapp3.1\DotNetAssessmentKnila.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\KnilaTask\DotNet_Developer_Assessment\DotNetAssessmentKnila\DotNetAssessmentKnila.Data\obj\Debug\netcoreapp3.1\DotNetAssessmentKnila.Data.AssemblyInfoInputs.cache
+D:\KnilaTask\DotNet_Developer_Assessment\DotNetAssessmentKnila\DotNetAssessmentKnila.Data\obj\Debug\netcoreapp3.1\DotNetAssessmentKnila.Data.AssemblyInfo.cs
+D:\KnilaTask\DotNet_Developer_Assessment\DotNetAssessmentKnila\DotNetAssessmentKnila.Data\obj\Debug\netcoreapp3.1\DotNetAssessmentKnila.Data.csproj.CoreCompileInputs.cache
+D:\KnilaTask\DotNet_Developer_Assessment\DotNetAssessmentKnila\DotNetAssessmentKnila.Data\obj\Debug\netcoreapp3.1\DotNetAssessmentKnila.Data.dll
+D:\KnilaTask\DotNet_Developer_Assessment\DotNetAssessmentKnila\DotNetAssessmentKnila.Data\obj\Debug\netcoreapp3.1\DotNetAssessmentKnila.Data.pdb
+D:\KnilaTask\DotNet_Developer_Assessment\DotNetAssessmentKnila\DotNetAssessmentKnila.Data\obj\Debug\netcoreapp3.1\DotNetAssessmentKnila.Data.genruntimeconfig.cache

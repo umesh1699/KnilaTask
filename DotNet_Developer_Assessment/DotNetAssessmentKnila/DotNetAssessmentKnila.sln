@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetAssessmentKnila", "DotNetAssessmentKnila\DotNetAssessmentKnila.csproj", "{54A4745D-5E48-49BC-B719-DD21F4FD572D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetAssessmentKnila.Data", "DotNetAssessmentKnila.Data\DotNetAssessmentKnila.Data.csproj", "{79930124-B0C6-476E-B310-264DAF32EF64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetAssessmentKnila.Repository", "DotNetAssessmentKnila.Repository\DotNetAssessmentKnila.Repository.csproj", "{CA7732DF-BD77-4029-A1D9-499F5B72F978}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetAssessmentKnila.API", "DotNetAssessmentKnila.API\DotNetAssessmentKnila.API.csproj", "{60855A99-BD01-44D6-B214-207E962B9820}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54A4745D-5E48-49BC-B719-DD21F4FD572D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54A4745D-5E48-49BC-B719-DD21F4FD572D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54A4745D-5E48-49BC-B719-DD21F4FD572D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54A4745D-5E48-49BC-B719-DD21F4FD572D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79930124-B0C6-476E-B310-264DAF32EF64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79930124-B0C6-476E-B310-264DAF32EF64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79930124-B0C6-476E-B310-264DAF32EF64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79930124-B0C6-476E-B310-264DAF32EF64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA7732DF-BD77-4029-A1D9-499F5B72F978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA7732DF-BD77-4029-A1D9-499F5B72F978}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA7732DF-BD77-4029-A1D9-499F5B72F978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA7732DF-BD77-4029-A1D9-499F5B72F978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60855A99-BD01-44D6-B214-207E962B9820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60855A99-BD01-44D6-B214-207E962B9820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60855A99-BD01-44D6-B214-207E962B9820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60855A99-BD01-44D6-B214-207E962B9820}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6454A37-1653-48A8-8F61-F18A35190CA3}
+	EndGlobalSection
+EndGlobal

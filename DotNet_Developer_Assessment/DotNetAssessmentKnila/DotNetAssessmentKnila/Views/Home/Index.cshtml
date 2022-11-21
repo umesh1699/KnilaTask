@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@model IEnumerable<DotNetAssessmentKnila.Repository.StoredProcs.GetAllContactsDataResult>
+
+    <script src="~/js/bootstrap-sortable.js"></script>
+    <script src="~/js/moment.min.js"></script>
+    <link href="~/css/bootstrap-sortable.css" rel="stylesheet" />
+    <h2>All Contacts</h2>
+
+    <a asp-action="CreateContact" class="btn btn-sm btn-primary">Create New Contact</a>
+    @*<a asp-action="GetReservation" class="btn btn-sm btn-secondary">Get Reservation</a>*@
+
+    <table class="table table-sm table-bordered table-condensed sortable">
+        @if (Model.Count() == 0)
+        {
+            <tr>
+                <td colspan="10">No Record's found.</td>
+            </tr>
+
+        }
+        else
+        {
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone No.</th>
+                    <th>Address</th>
+                    <th>Postal Code</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.FirstName  @item.LastName</td>
+                        <td>@item.Email</td>
+                        <td>@item.PhoneNumber</td>
+                        <td>@item.AddressLine1 @item.AddressLine2</td>
+                        <td>@item.PostalCode</td>
+                        <td>@item.City</td>
+                        <td>@item.State</td>
+                        <td>@item.Country</td>
+
+                        <td>
+                           
+                            <a asp-action="EditContact" asp-route-id="@item.Id"
+                               class="btn btn-info" style="margin-bottom:5px;">
+                                <i class="glyphicon glyphicon-pencil"></i>  Edit
+                            </a>
+
+                            <a asp-action="MapAddressData" asp-route-id="@item.Id"
+                               class="btn btn-info">
+                                <i class="glyphicon glyphicon-map-marker"></i>  View On Map
+                            </a>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        }
+    </table>
