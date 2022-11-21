@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KnilaTask\\DotNet_Developer_Assessment\\DotNetAssessmentKnila\\DotNetAssessmentKnila.Data\\DotNetAssessmentKnila.Data.csproj": {}
+    "D:\\KnilaTask\\knila\\KnilaTask\\DotNet_Developer_Assessment\\DotNetAssessmentKnila\\DotNetAssessmentKnila.Data\\DotNetAssessmentKnila.Data.csproj": {}
   },
   "projects": {
-    "D:\\KnilaTask\\DotNet_Developer_Assessment\\DotNetAssessmentKnila\\DotNetAssessmentKnila.Data\\DotNetAssessmentKnila.Data.csproj": {
+    "D:\\KnilaTask\\knila\\KnilaTask\\DotNet_Developer_Assessment\\DotNetAssessmentKnila\\DotNetAssessmentKnila.Data\\DotNetAssessmentKnila.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KnilaTask\\DotNet_Developer_Assessment\\DotNetAssessmentKnila\\DotNetAssessmentKnila.Data\\DotNetAssessmentKnila.Data.csproj",
+        "projectUniqueName": "D:\\KnilaTask\\knila\\KnilaTask\\DotNet_Developer_Assessment\\DotNetAssessmentKnila\\DotNetAssessmentKnila.Data\\DotNetAssessmentKnila.Data.csproj",
         "projectName": "DotNetAssessmentKnila.Data",
-        "projectPath": "D:\\KnilaTask\\DotNet_Developer_Assessment\\DotNetAssessmentKnila\\DotNetAssessmentKnila.Data\\DotNetAssessmentKnila.Data.csproj",
+        "projectPath": "D:\\KnilaTask\\knila\\KnilaTask\\DotNet_Developer_Assessment\\DotNetAssessmentKnila\\DotNetAssessmentKnila.Data\\DotNetAssessmentKnila.Data.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\KnilaTask\\DotNet_Developer_Assessment\\DotNetAssessmentKnila\\DotNetAssessmentKnila.Data\\obj\\",
+        "outputPath": "D:\\KnilaTask\\knila\\KnilaTask\\DotNet_Developer_Assessment\\DotNetAssessmentKnila\\DotNetAssessmentKnila.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c+79/cRRGuami4G+5Lvleje18O4vKglvFE43bHzSZ93MqyQFLkMWCbr2jOi+mxhkkp/k51/KPwCqSywLDvQIrg==",
+  "dgSpecHash": "67EkMouKkip8ouK9b7Es/LsTIhknrY0hvve5MD2sn61tvRnIGJWaEhV6P4HC6v6r6UberunFWURpd0m0tdQ1JQ==",
   "success": true,
-  "projectFilePath": "D:\\KnilaTask\\DotNet_Developer_Assessment\\DotNetAssessmentKnila\\DotNetAssessmentKnila\\DotNetAssessmentKnila.csproj",
+  "projectFilePath": "D:\\KnilaTask\\knila\\KnilaTask\\DotNet_Developer_Assessment\\DotNetAssessmentKnila\\DotNetAssessmentKnila\\DotNetAssessmentKnila.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\googlemaps.locationservices\\1.2.0.5\\googlemaps.locationservices.1.2.0.5.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

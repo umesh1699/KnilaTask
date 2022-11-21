@@ -64,7 +64,7 @@ namespace DotNetAssessmentKnila.Repository
         }
         #endregion
 
-
+       
         public List<GetAllContactsDataResult> GetAllContactData()
         {
             var result = new List<GetAllContactsDataResult>();
@@ -110,8 +110,7 @@ namespace DotNetAssessmentKnila.Repository
 
             return result;
         }
-
-
+      
         public GetAllContactsDataResult GetContactDataById(int contactId)
         {
 
@@ -155,8 +154,6 @@ namespace DotNetAssessmentKnila.Repository
             return null;
         }
 
-       
-      
         public bool UpdateContactData(GetAllContactsDataResult data)
         {
             if (data.Id <= 0)

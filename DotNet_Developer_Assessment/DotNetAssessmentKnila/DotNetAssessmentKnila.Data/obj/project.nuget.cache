@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JbQAEXmKKOkaSmpDbzoW3122oXhJaqbNL9CUYhApQdScRLpLm+9UpR6U42rOvXNWdWphRV88ctv0rlXE49+Rsg==",
+  "dgSpecHash": "Hkr0bbyExnnwvRwuA6OyMmPqlVLgj5Zsxyja+CjKxb/nuC00gNMcGp3fn/GctnK6OujaDSh+a8wDdo9hyOEBVw==",
   "success": true,
-  "projectFilePath": "D:\\KnilaTask\\DotNet_Developer_Assessment\\DotNetAssessmentKnila\\DotNetAssessmentKnila.Data\\DotNetAssessmentKnila.Data.csproj",
+  "projectFilePath": "D:\\KnilaTask\\knila\\KnilaTask\\DotNet_Developer_Assessment\\DotNetAssessmentKnila\\DotNetAssessmentKnila.Data\\DotNetAssessmentKnila.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

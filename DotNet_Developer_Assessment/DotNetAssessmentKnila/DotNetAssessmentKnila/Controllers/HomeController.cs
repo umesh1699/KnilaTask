@@ -79,7 +79,7 @@ namespace DotNetAssessmentKnila.Controllers
             using (HttpClient client = new HttpClient())
             {
                 string endpoint = _apiBaseUrl + "/Contact/GetContactById/";
-                using (var Response = await client.GetAsync(endpoint + Id))
+                using (var Response = await client.GetAsync(endpoint + Id)) 
                 {
                     if (Response.StatusCode == System.Net.HttpStatusCode.OK)
                     {
